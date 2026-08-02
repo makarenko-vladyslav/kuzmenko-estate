@@ -1,0 +1,15 @@
+
+{
+  "basePrices": {
+    "architectural": 1200,
+    "interior": 1000,
+    "turnkey": 18000
+  },
+  "multipliers": {
+    "residential": 1.0,
+    "commercial": 1.25,
+    "villa": 1.15
+  },
+  "currency": "грн",
+  "estimationLogic": "range"
+}

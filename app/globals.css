@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: hsl(20 12% 11%);
+  --color-accent: hsl(24 75% 50%);
+  --color-bg-light: hsl(36 24% 96%);
+  --color-bg-card: hsl(36 30% 99%);
+  --color-text-main: hsl(20 15% 15%);
+  --color-text-muted: hsl(20 10% 45%);
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Lora', serif;
+}
+
+@layer base {
+  html { 
+    font-size: 16px; 
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-glow {
+    text-shadow: 0 0 30px hsl(24 75% 50% / 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes scroll-drift {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes rotate-seal {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes marquee-drift {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-seal-rotate {
+  animation: rotate-seal 12s linear infinite;
+}
+
+.animate-marquee-slide {
+  animation: marquee-drift 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-seal-rotate, .animate-marquee-slide {
+    animation: none !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}

@@ -1,0 +1,584 @@
+
+{
+  "defaultLocale": "uk",
+  "locales": {
+    "uk": {
+      "meta": {
+        "title": "Kuzmenko Estate — Архітектурне проєктування та будівництво резиденцій",
+        "tagline": "Фіксований кошторис до початку робіт"
+      },
+      "nav": {
+        "philosophy": "Філософія",
+        "services": "Послуги & Ціни",
+        "calculator": "Кошторис",
+        "process": "Технологія",
+        "advantages": "Стандарти",
+        "gallery": "Проєкти",
+        "contact": "Контакти",
+        "cta": "Розрахувати бюджет"
+      },
+      "hero": {
+        "kicker": "Est. 2009 — Дніпро, Набережна",
+        "title": "Проєктуємо та будуємо приватні резиденції з *фіксованим бюджетом* до початку робіт",
+        "description": "Повний цикл генерального проєктування, будівництва та технічного нагляду від однієї інхаус-команди. Повна фінансова та юридична відповідальність за кожен кубічний метр бетону.",
+        "videoUrl": "https://videos.pexels.com/video-files/28698339/12454450_1280_720_50fps.mp4",
+        "posterUrl": "https://images.pexels.com/videos/28698339/pexels-photo-28698339.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "badge": "Юридична гарантія вартості",
+        "metaHours": "Пн - Сб: 09:00 - 18:00",
+        "metaAddress": "Дніпро, вул. Шевченка, 12",
+        "metaRating": "4.9/5 · Google · 140 відгуків",
+        "flankingLeft": "Повне управління ризиками: беремо на себе коливання цін на метал, бетон та логістику.",
+        "flankingRight": "Цифрова прозорість: щоденні фінансові звіти та пряма трансляція з майданчика.",
+        "tickerText": "АРХІТЕКТУРА · БУДІВНИЦТВО · ТЕХНІЧНИЙ НАГЛЯД · КОМПЛЕКТАЦІЯ · ЛАНДШАФТ"
+      },
+      "socialProof": {
+        "experience": "15 років практики",
+        "completed": "100+ об'єктів",
+        "trackRecord": "Heisenberg, Mur Mur Bar, Вілли",
+        "surveillance": "24/7 Відеоконтроль"
+      },
+      "philosophy": {
+        "kicker": "Технологія Kuzmenko Estate",
+        "title": "Контроль вартості починається задовго до першого залиття бетону",
+        "description": "Понад 80% архітектурних проєктів здорожчують під час реалізації через відсутність зв'язку між архітектором та будівельним майданчиком. Наша команда об'єднує проєктувальників, інженерів мереж та виконробів в одному кабінеті. Ми прораховуємо складні вузли примикань та специфікації матеріалів ще на етапі ескізу, гарантуючи незмінність вартості у договорі.",
+        "quote": "Архітектура — це не картинка в журналі, а точний інженерний розрахунок, де кожен шов має своє обґрунтування та ціну.",
+        "author": "Дмитро Кузьменко — засновник та головний архітектор",
+        "stat1Val": "15",
+        "stat1Lbl": "Років практичного досвіду",
+        "stat2Val": "100%",
+        "stat2Lbl": "Здано вчасно без затримок",
+        "stat3Val": "0%",
+        "stat3Lbl": "Переплат після підписання договору",
+        "photoCaption": "Авторський нагляд на майданчику резиденції в Обухівці — Дніпро, 2023.",
+        "linkText": "Переглянути стандарти проєктування →"
+      },
+      "services": {
+        "kicker": "Прозорий прайс-лист",
+        "title": "Вартість архітектурних рішень та інжинірингу",
+        "lede": "Фіксовані розцінки на розробку робочої документації та авторський нагляд. Ніяких прихованих платежів.",
+        "category1": "Проєктування",
+        "category2": "Будівництво",
+        "category3": "Комплектація",
+        "row1Title": "Архітектурний проєкт (стадія АР)",
+        "row1Desc": "Планувальні рішення, посадка на ділянку, фасади, розрізи, 3D візуалізація.",
+        "row1Price": "1 200 грн / м²",
+        "row2Title": "Конструктивні рішення (стадія КР)",
+        "row2Desc": "Детальний розрахунок фундаментів, монолітних поясів, колон та перекриттів.",
+        "row2Price": "900 грн / м²",
+        "row3Title": "Інженерні мережі (стадія ІР)",
+        "row3Desc": "Проєктування вентиляції, опалення, кондиціонування, електрики та каналізації.",
+        "row3Price": "1 000 грн / м²",
+        "row4Title": "Зведення коробки будинку",
+        "row4Desc": "Земляні роботи, фундаментна плита, несучі стіни з керамоблоку, перекриття.",
+        "row4Price": "18 000 грн / м²",
+        "row5Title": "Монтаж плоскої покрівлі",
+        "row5Desc": "Утеплення PIR-плитами, гідроізоляція ПВХ-мембраною, водовідведення.",
+        "row5Price": "4 500 грн / м²",
+        "row6Title": "Оздоблення фасадів",
+        "row6Desc": "Натуральний камінь, вентильований фасад, крупноформатний керамограніт.",
+        "row6Price": "6 500 грн / м²",
+        "row7Title": "Авторський нагляд",
+        "row7Desc": "Регулярні виїзди головного архітектора на об'єкт, контроль відповідності кресленням.",
+        "row7Price": "25 000 грн / міс",
+        "row8Title": "Дизайн-проєкт інтер'єру",
+        "row8Desc": "Повна розгортка стін, відомості матеріалів, плани освітлення та сантехніки.",
+        "row8Price": "1 500 грн / м²",
+        "signatureTitle": "Генеральний підряд під ключ",
+        "signatureDesc": "Повний цикл від геології ділянки до меблювання. Ми несемо 100% матеріальної відповідальності за терміни та фіксований кошторис.",
+        "signaturePrice": "від 28 000 грн / м²",
+        "footnote": "* Розрахунок є орієнтовним та залежить від складності рельєфу ділянки та вибраних фасадних матеріалів.",
+        "cta": "Детальніше про комплектацію"
+      },
+      "calculator": {
+        "kicker": "Прозоре ціноутворення",
+        "title": "Попередній розрахунок інвестицій у ваш проєкт",
+        "intro": "Вкажіть базові параметри, щоб отримати орієнтовну вартість розробки проєкту та підготовчих робіт на основі тарифів ринку Дніпра.",
+        "labels": {
+          "area": "Площа об'єкта:",
+          "type": "Тип об'єкта:",
+          "service": "Обсяг послуг:",
+          "result": "Орієнтовний бюджет проєктування",
+          "submit": "Зафіксувати вартість та замовити консультацію"
+        },
+        "types": {
+          "residential": "Приватна вілла",
+          "commercial": "Комерційне приміщення",
+          "landscape": "Ландшафтні об'єкти"
+        },
+        "services": {
+          "architectural": "Тільки архітектурний проєкт",
+          "interior": "Тільки дизайн інтер'єру",
+          "full": "Повний цикл (Архітектура + Інтер'єр)"
+        }
+      },
+      "process": {
+        "kicker": "Послідовність роботи",
+        "title": "Жодних сюрпризів під час будівництва",
+        "steps": [
+          {
+            "num": "01",
+            "title": "Аналітика та фіксація бюджету",
+            "desc": "Детально вивчаємо ділянку, геологію та ваші вимоги. Формуємо рамки бюджету, які вносимо у договір перед початком проєктування."
+          },
+          {
+            "num": "02",
+            "title": "Ескізний проєкт",
+            "desc": "Створюємо архітектурну концепцію, планування та реалістичні візуалізації. Ви бачите об'єм та архітектурний образ майбутнього будинку."
+          },
+          {
+            "num": "03",
+            "title": "Робоча документація та тендер",
+            "desc": "Прораховуємо всі конструктивні елементи та мережі. Готуємо специфікацію матеріалів, за якою закуповуємо все за партнерськими цінами."
+          },
+          {
+            "num": "04",
+            "title": "Будівництво та комплектація",
+            "desc": "Реалізуємо проєкт нашими бригадами. Ви спостерігаєте за прогресом через камери спостереження та щотижневі фінансові звіти."
+          }
+        ]
+      },
+      "videoShowcase": {
+        "kicker": "Контроль 24/7",
+        "title": "Будівництво без стресу: онлайн-трансляція для клієнтів",
+        "description": "Ми встановили камери відеоспостереження на кожному нашому майданчику в Дніпрі. Ви отримуєте посилання на закритий стрім у день підписання договору та можете контролювати хід робіт з будь-якої точки світу.",
+        "videoUrl": "https://videos.pexels.com/video-files/14377337/14377337-hd_1920_1080_30fps.mp4",
+        "posterUrl": "https://images.pexels.com/videos/14377337/abstract-architect-architectural-architecture-14377337.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "label": "Демонстрація системи відеоспостереження"
+      },
+      "advantages": {
+        "kicker": "Стандарти якості",
+        "title": "Безкомпромісні рішення, що захищають інвестиції",
+        "proofQuote": "Ми шукали команду, яка побудує будинок без нашої щоденної присутності. Хлопці здали об'єкт у Дніпрі точно в рамках затвердженого півтора року тому кошторису.",
+        "proofAuthor": "Олександр В. — власник резиденції в передмісті Дніпра",
+        "proofRating": "4.9/5 · Google Reviews · Нам довіряють лідери ринку",
+        "items": [
+          {
+            "title": "Фіксація бюджету в договорі",
+            "desc": "Будь-які непередбачувані витрати або помилки в кресленнях покриваються за рахунок компанії. Сума фіксується в гривні."
+          },
+          {
+            "title": "Технічний нагляд третьої сторони",
+            "desc": "Окремий сертифікований інженер веде аудит кожної критичної стадії: від в'язки арматури до випробувань гідроізоляції."
+          },
+          {
+            "title": "Прямі поставки з фабрик Європи",
+            "desc": "Повна комплектація об'єкта сантехнікою, світлом та оздобленням безпосередньо від виробників зі знижкою до 20%."
+          },
+          {
+            "title": "Узаконення та дозволи",
+            "desc": "Самостійно отримуємо містобудівні умови, будівельний паспорт та реєструємо початок виконання робіт."
+          }
+        ]
+      },
+      "gallery": {
+        "kicker": "Обрані роботи",
+        "title": "Портфоліо архітектурних та інтер'єрних рішень",
+        "items": [
+          {
+            "title": "Heisenberg Coffee Lab",
+            "location": "Дніпро, вул. Шевченка",
+            "category": "Комерційна архітектура",
+            "imageUrl": "https://picsum.photos/seed/kzm-heisenberg/800/600"
+          },
+          {
+            "title": "Mur Mur Bar",
+            "location": "Дніпро, центр",
+            "category": "Інтер'єр та світловий дизайн",
+            "imageUrl": "https://picsum.photos/seed/kzm-murmur/800/600"
+          },
+          {
+            "title": "Вілла в передмісті",
+            "location": "Обухівка, Дніпропетровська область",
+            "category": "Приватна резиденція",
+            "imageUrl": "https://picsum.photos/seed/kzm-villa1/800/600"
+          },
+          {
+            "title": "Офісний простір K-Estate",
+            "location": "Дніпро, бізнес-центр",
+            "category": "Реновація офісу",
+            "imageUrl": "https://picsum.photos/seed/kzm-office/800/600"
+          },
+          {
+            "title": "Резиденція на березі",
+            "location": "Дніпро, Набережна перемоги",
+            "category": "Проєктування та конструктив",
+            "imageUrl": "https://picsum.photos/seed/kzm-river/800/600"
+          },
+          {
+            "title": "Заміський комплекс",
+            "location": "Піщанка, рекреаційна зона",
+            "category": "Ландшафтне проєктування",
+            "imageUrl": "https://picsum.photos/seed/kzm-resort/800/600"
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "Професійний консалтинг",
+        "title": "Відповіді на складні інженерні запитання",
+        "items": [
+          {
+            "q": "Чи можна внести зміни в конструктив під час будівництва?",
+            "a": "Будь-які зміни в процесі зведення коробки потребують повторного розрахунку навантажень. Ми робимо це оперативно за участю конструкторів нашого бюро."
+          },
+          {
+            "q": "Як фіксується ціна матеріалів при інфляції?",
+            "a": "Ми закуповуємо основний обсяг матеріалів (арматура, цегла, утеплювачі) одразу після підписання договору на власні склади, нівелюючи інфляцію."
+          },
+          {
+            "q": "Чи берете ви на себе проходження держекспертиз?",
+            "a": "Так, ми готуємо та погоджуємо містобудівну документацію та отримуємо дозволи на будівництво у Дніпрі під ключ."
+          },
+          {
+            "q": "Які гарантії ви надаєте на монолітні конструкції?",
+            "a": "Офіційна гарантія на залізобетонні каркаси за договором становить 50 років."
+          },
+          {
+            "q": "З якими стилями архітектури ви працюєте?",
+            "a": "Ми спеціалізуємося на сучасній архітектурі: мінімалізм, хай-тек, прерійний стиль (Райт) та сучасне шале."
+          },
+          {
+            "q": "Чи будуєте ви за чужими проєктами?",
+            "a": "Ми приймаємо сторонні проєкти лише після детального інженерного та фінансового аудиту креслень нашими фахівцями."
+          },
+          {
+            "q": "Скільки триває етап ескізного проєктування?",
+            "a": "Зазвичай розробка ескізної концепції з плануваннями та 3D займає від 4 до 6 тижнів."
+          },
+          {
+            "q": "Яка мінімальна площа об'єкта для замовлення?",
+            "a": "Ми беремо в роботу приватні резиденції площею від 150 м² та комерційні об'єкти від 100 м²."
+          },
+          {
+            "q": "Хто контролює постачання матеріалів на об'єкт?",
+            "a": "Наш відділ постачання повністю контролює графік поставок та відповідність матеріалів сертифікатам якості."
+          },
+          {
+            "q": "Як організовано технічний нагляд на майданчику?",
+            "a": "Інженер технагляду відвідує майданчик мінімум тричі на тиждень та фіксує результати перевірок у цифровому кабінеті клієнта."
+          }
+        ]
+      },
+      "contact": {
+        "kicker": "Початок діалогу",
+        "title": "Збудуйте будинок без стресу",
+        "description": "Залиште контакти для узгодження часу зустрічі в нашому офісі або замовлення виїзного аналізу вашої земельної ділянки.",
+        "form": {
+          "name": "Ваше ім'я",
+          "phone": "Номер телефону",
+          "email": "E-mail адреса",
+          "area": "Орієнтовна площа об'єкта (м²)",
+          "date": "Бажаний старт проєктування",
+          "message": "Додаткові коментарі чи побажання",
+          "success": "Дякуємо! Наш головний архітектор зв'яжеться з вами протягом години.",
+          "error": "Будь ласка, заповніть усі обов'язкові поля."
+        },
+        "invitationTitle": "Запросити архітектора на ділянку",
+        "hoursTitle": "Режим прийому замовлень",
+        "addressLabel": "Офіс архітектурного бюро",
+        "addressVal": "м. Дніпро, вул. Шевченка, 12, офіс 402",
+        "mapLinkText": "Дивитись на картах Google",
+        "trustLine": "* Надіслані дані є конфіденційними та захищені внутрішньою політикою безпеки."
+      },
+      "footer": {
+        "tagline": "Повний цикл архітектурного проєктування та генерального підряду з повною матеріальною відповідальністю.",
+        "contacts": "Контакт-центр",
+        "hours": "Графік роботи",
+        "hoursVal": "Пн - Сб: 09:00 - 18:00",
+        "address": "Головний офіс",
+        "addressVal": "Україна, м. Дніпро, вул. Шевченка, 12",
+        "allRights": "Усі права захищено.",
+        "studio": "Розроблено Студія Тест",
+        "wordmark": "KUZMENKO ESTATE"
+      }
+    },
+    "en": {
+      "meta": {
+        "title": "Kuzmenko Estate — Architectural Design & Residence Construction",
+        "tagline": "Fixed estimate before construction starts"
+      },
+      "nav": {
+        "philosophy": "Philosophy",
+        "services": "Services & Prices",
+        "calculator": "Estimate",
+        "process": "Technology",
+        "advantages": "Standards",
+        "gallery": "Projects",
+        "contact": "Contact",
+        "cta": "Calculate Budget"
+      },
+      "hero": {
+        "kicker": "Est. 2009 — Dnipro, Waterfront",
+        "title": "We design and build private residences with a *fixed budget* before starting",
+        "description": "Full cycle of general design, construction, and technical supervision by one in-house team. Complete financial and legal liability for every cubic meter of concrete.",
+        "videoUrl": "https://videos.pexels.com/video-files/28698339/12454450_1280_720_50fps.mp4",
+        "posterUrl": "https://images.pexels.com/videos/28698339/pexels-photo-28698339.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "badge": "Contractual cost guarantee",
+        "metaHours": "Mon - Sat: 09:00 - 18:00",
+        "metaAddress": "Dnipro, Shevchenka St, 12",
+        "metaRating": "4.9/5 · Google · 140 reviews",
+        "flankingLeft": "Full risk management: we cover price fluctuations for steel, concrete, and logistics.",
+        "flankingRight": "Digital transparency: daily financial reports and live broadcasting from the site.",
+        "tickerText": "ARCHITECTURE · CONSTRUCTION · TECH SUPERVISION · OUTSTANDING FURNISHING · LANDSCAPE"
+      },
+      "socialProof": {
+        "experience": "15 years of practice",
+        "completed": "100+ projects",
+        "trackRecord": "Heisenberg, Mur Mur Bar, Villas",
+        "surveillance": "24/7 Video Control"
+      },
+      "philosophy": {
+        "kicker": "Kuzmenko Estate Method",
+        "title": "Budget control starts long before the first concrete pour",
+        "description": "Over 80% of architectural projects increase in cost during realization due to the lack of connection between the architect and the construction site. Our team combines designers, network engineers, and builders in one room. We calculate complex nodes and material specifications during the schematic phase.",
+        "quote": "Architecture is not just a picture in a magazine, but a precise engineering calculation where every seam has its justification and price.",
+        "author": "Dmytro Kuzmenko — Founder & Chief Architect",
+        "stat1Val": "15",
+        "stat1Lbl": "Years of experience",
+        "stat2Val": "100%",
+        "stat2Lbl": "Delivered on schedule",
+        "stat3Val": "0%",
+        "stat3Lbl": "Budget modifications after agreement",
+        "photoCaption": "On-site author supervision at the suburban villa — Dnipro, 2023.",
+        "linkText": "View our design standards →"
+      },
+      "services": {
+        "kicker": "Transparent Pricing",
+        "title": "Cost of architectural decisions & engineering",
+        "lede": "Fixed rates for development of working blueprints and architectural supervision. No hidden payments.",
+        "category1": "Design",
+        "category2": "Construction",
+        "category3": "Furnishing",
+        "row1Title": "Architectural Project (Stage AR)",
+        "row1Desc": "Layout solutions, site master plan, facades, cross-sections, 3D visualization.",
+        "row1Price": "1,200 UAH / m²",
+        "row2Title": "Structural Engineering (Stage KR)",
+        "row2Desc": "Detailed design of foundation slabs, monolithic beams, columns, and slabs.",
+        "row2Price": "900 UAH / m²",
+        "row3Title": "Utility Networks (Stage IR)",
+        "row3Desc": "Design of ventilation, heating, air conditioning, electricity, and plumbing.",
+        "row3Price": "1,000 UAH / m²",
+        "row4Title": "Structural Building Construction",
+        "row4Desc": "Excavation work, foundation slab, load-bearing walls, concrete floor slabs.",
+        "row4Price": "18,000 UAH / m²",
+        "row5Title": "Flat Roof Installation",
+        "row5Desc": "Thermal insulation with PIR plates, waterproof membrane layer, drainages.",
+        "row5Price": "4,500 UAH / m²",
+        "row6Title": "Facade Finishes",
+        "row6Desc": "Natural stone, ventilated facade cladding, large-format porcelain stoneware.",
+        "row6Price": "6,500 UAH / m²",
+        "row7Title": "Author Supervision",
+        "row7Desc": "Regular chief architect visits to site, control over blueprint execution.",
+        "row7Price": "25,000 UAH / mo",
+        "row8Title": "Interior Design Project",
+        "row8Desc": "Full wall elevations, material specifications, lighting & plumbing layouts.",
+        "row8Price": "1,500 UAH / m²",
+        "signatureTitle": "Turnkey General Contract",
+        "signatureDesc": "Full process from geology to final interior furnishing. We bear 100% financial liability for schedule and fixed pricing.",
+        "signaturePrice": "from 28,000 UAH / m²",
+        "footnote": "* Estimates are preliminary and vary based on site terrain difficulty and facade material choices.",
+        "cta": "Read more about procurement"
+      },
+      "calculator": {
+        "kicker": "Transparent Pricing",
+        "title": "Estimate your project investments",
+        "intro": "Provide basic parameters to calculate rough design and preparation costs based on the average market rates in Dnipro.",
+        "labels": {
+          "area": "Object Area:",
+          "type": "Object Type:",
+          "service": "Scope of work:",
+          "result": "Estimated design budget",
+          "submit": "Lock in pricing and schedule a meeting"
+        },
+        "types": {
+          "residential": "Private Villa",
+          "commercial": "Commercial Space",
+          "landscape": "Landscape Design"
+        },
+        "services": {
+          "architectural": "Architectural Design Only",
+          "interior": "Interior Design Only",
+          "full": "Full Cycle (Architecture + Interior)"
+        }
+      },
+      "process": {
+        "kicker": "Workflow Sequence",
+        "title": "Zero budget creep during construction",
+        "steps": [
+          {
+            "num": "01",
+            "title": "Analytics & Budget Lock",
+            "desc": "We study geological data, site borders, and your requirements. We put maximum budget limits directly into our legal agreement."
+          },
+          {
+            "num": "02",
+            "title": "Schematic Design",
+            "desc": "We create architectural concepts, floorplans, and realistic 3D renderings to showcase the future volumetric presence."
+          },
+          {
+            "num": "03",
+            "title": "Blueprints & Procurement",
+            "desc": "We calculate all engineering elements and utilities. A detailed spec list is prepared for partner-price sourcing."
+          },
+          {
+            "num": "04",
+            "title": "Construction & Sourcing",
+            "desc": "Our construction crew executes the project. You monitor daily progress via live cameras and weekly spending reports."
+          }
+        ]
+      },
+      "videoShowcase": {
+        "kicker": "24/7 Supervision",
+        "title": "Stress-free construction: live video stream for owners",
+        "description": "We set up professional IP video surveillance on every active site in Dnipro. You receive a private feed URL on day one to monitor progress anywhere.",
+        "videoUrl": "https://videos.pexels.com/video-files/14377337/14377337-hd_1920_1080_30fps.mp4",
+        "posterUrl": "https://images.pexels.com/videos/14377337/abstract-architect-architectural-architecture-14377337.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200",
+        "label": "Live camera demo feed"
+      },
+      "advantages": {
+        "kicker": "Quality Standards",
+        "title": "Uncompromising decisions that protect your assets",
+        "proofQuote": "We were looking for a team that would build our residence without requiring our daily on-site presence. They delivered the key exact to the cost fixed 1.5 years ago.",
+        "proofAuthor": "Alexander V. — residence owner in Dnipro suburban area",
+        "proofRating": "4.9/5 · Google Reviews · Trusted by industrial leaders",
+        "items": [
+          {
+            "title": "Contractual Budget Guarantee",
+            "desc": "Any unpredictable cost or blueprint mistake is covered at our company's expense. The sum is legally bound."
+          },
+          {
+            "title": "Independent Tech Control",
+            "desc": "A dedicated certified engineer carries out audits at every critical step from reinforcing bars to waterproof membrane pressure testing."
+          },
+          {
+            "title": "Direct Factory Deliveries",
+            "desc": "Full building material and lighting systems procurement straight from European factories with up to 20% discount."
+          },
+          {
+            "title": "Permissions & Bureaucracy",
+            "desc": "We completely handle urbanistic layouts, design passports, construction filings, and register formal governmental declarations."
+          }
+        ]
+      },
+      "gallery": {
+        "kicker": "Featured Portfolio",
+        "title": "Selected architectural and design works",
+        "items": [
+          {
+            "title": "Heisenberg Coffee Lab",
+            "location": "Dnipro, Shevchenka St",
+            "category": "Commercial Architecture",
+            "imageUrl": "https://picsum.photos/seed/kzm-heisenberg/800/600"
+          },
+          {
+            "title": "Mur Mur Bar",
+            "location": "Dnipro, Center",
+            "category": "Interior & Light Design",
+            "imageUrl": "https://picsum.photos/seed/kzm-murmur/800/600"
+          },
+          {
+            "title": "Country Villa",
+            "location": "Obykhivka, Dnipro Region",
+            "category": "Private Residence",
+            "imageUrl": "https://picsum.photos/seed/kzm-villa1/800/600"
+          },
+          {
+            "title": "K-Estate Office",
+            "location": "Dnipro, Business Center",
+            "category": "Office Renovation",
+            "imageUrl": "https://picsum.photos/seed/kzm-office/800/600"
+          },
+          {
+            "title": "Riverfront Residence",
+            "location": "Dnipro, Naberezhna",
+            "category": "Engineering & Construction",
+            "imageUrl": "https://picsum.photos/seed/kzm-river/800/600"
+          },
+          {
+            "title": "Suburban Estate",
+            "location": "Pischanka, Recreational Zone",
+            "category": "Landscape Architecture",
+            "imageUrl": "https://picsum.photos/seed/kzm-resort/800/600"
+          }
+        ]
+      },
+      "faq": {
+        "kicker": "Professional Consultation",
+        "title": "Answers to complicated engineering questions",
+        "items": [
+          {
+            "q": "Can we make changes to structural drawings during construction?",
+            "a": "Any structural adjustment during foundation or column building requires load calculations. We handle it swiftly in-house with structural engineers."
+          },
+          {
+            "q": "How do you protect material costs from inflation?",
+            "a": "We procure primary materials (concrete blocks, reinforcing bars, insulation panels) immediately after signing the contract, keeping them at our warehouses."
+          },
+          {
+            "q": "Do you manage state approvals and building inspections?",
+            "a": "Yes, we handle the full cycle of state permits, architectural parameters approvals, and obtain final construction allowances in Dnipro."
+          },
+          {
+            "q": "What guarantees do you offer for reinforced structures?",
+            "a": "The official warranty bound inside our contracts for all load-bearing concrete elements is 50 years."
+          },
+          {
+            "q": "What design styles do you primarily execute?",
+            "a": "We specialize in modern architecture, featuring minimalist concepts, high-tech villas, prairie architecture (Frank Lloyd Wright style), and contemporary chalet."
+          },
+          {
+            "q": "Do you build according to third-party blueprints?",
+            "a": "We accept external designs only after a thorough structural and quantitative audit has been verified by our team."
+          },
+          {
+            "q": "How long does the conceptual design phase take?",
+            "a": "Normally, finalizing architectural spatial concepts and floorplans with realistic rendering options takes 4 to 6 weeks."
+          },
+          {
+            "q": "What is the minimum building square footage you accept?",
+            "a": "We generally accept private residence design from 150 sq. m. and commercial projects starting at 100 sq. m."
+          },
+          {
+            "q": "Who controls supplier deliveries and logistical schedules?",
+            "a": "Our corporate supply office manages all logistics schedules and guarantees that all on-site materials conform to legal certificates."
+          },
+          {
+            "q": "How is technical supervision executed on-site?",
+            "a": "A certified technical controller visits the active construction site at least 3 times a week, posting detailed structural updates inside the digital client cabinet."
+          }
+        ]
+      },
+      "contact": {
+        "kicker": "Initiate Dialogue",
+        "title": "Build your villa stress-free",
+        "description": "Provide your details to align on a consultation hour at our headquarters or order a preliminary geographical audit on your land plot.",
+        "form": {
+          "name": "Your name",
+          "phone": "Phone number",
+          "email": "E-mail address",
+          "area": "Estimated area (m²)",
+          "date": "Preferred layout start date",
+          "message": "Specific notes or requests",
+          "success": "Sent successfully! Our structural director will call you back within an hour.",
+          "error": "Kindly fill in all requested elements."
+        },
+        "invitationTitle": "Invite chief architect to your plot",
+        "hoursTitle": "Order booking times",
+        "addressLabel": "Bureau main address",
+        "addressVal": "Shevchenka St, 12, Office 402, Dnipro",
+        "mapLinkText": "View on Google Maps",
+        "trustLine": "* All transferred information remains fully confidential under secure local enterprise guidelines."
+      },
+      "footer": {
+        "tagline": "Full cycle of general architectural drafting and general contracting backed by contractual financial liabilities.",
+        "contacts": "Contact Center",
+        "hours": "Working Hours",
+        "hoursVal": "Mon - Sat: 09:00 - 18:00",
+        "address": "Headquarters",
+        "addressVal": "Ukraine, Dnipro, Shevchenka St, 12",
+        "allRights": "All rights reserved.",
+        "studio": "Developed by Studio Test",
+        "wordmark": "KUZMENKO ESTATE"
+      }
+    }
+  }
+}
