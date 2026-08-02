@@ -1,128 +1,185 @@
-
 "use client";
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from '@/lib/i18n';
 
 export default function Header() {
-  const { locale, setLocale, t } = useLocale();
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, locale, setLocale } = useLocale();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleLanguage = () => {
-    setLocale(locale === 'uk' ? 'en' : 'uk');
-  };
-
   const navItems = [
-    { label: t('nav.philosophy'), href: '#philosophy' },
-    { label: t('nav.services'), href: '#services' },
-    { label: t('nav.calculator'), href: '#calculator' },
-    { label: t('nav.process'), href: '#process' },
-    { label: t('nav.advantages'), href: '#advantages' },
-    { label: t('nav.gallery'), href: '#gallery' },
-    { label: t('nav.contact'), href: '#contact' },
+    { key: 'services', path: '#services' },
+    { key: 'philosophy', path: '#philosophy' },
+    { key: 'calculator', path: '#calculator' },
+    { key: 'trust', path: '#trust' },
+    { key: 'portfolio', path: '#portfolio' },
+    { key: 'process', path: '#process' },
+    { key: 'faq', path: '#faq' },
+    { key: 'contact', path: '#contact' }
   ];
 
+  const handleNavClick = (path: string) => {
+    setMenuOpen(false);
+    const target = document.querySelector(path);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-primary/95 backdrop-blur-md py-4 border-b border-white/5 shadow-lg' : 'bg-transparent py-6'
-    }`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        {/* Typographic wordmark logo (NO SVG LOGOMARK) */}
-        <a href="#" className="flex flex-col text-white select-none">
-          <span className="font-display font-bold tracking-[0.25em] text-lg sm:text-xl uppercase">KUZMENKO</span>
-          <span className="font-body text-[8px] tracking-[0.6em] text-accent uppercase leading-none">ESTATE</span>
-        </a>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="text-white/80 hover:text-accent font-body text-sm tracking-wide transition-colors duration-200">
-              {item.label}
-            </a>
-          ))}
-        </nav>
-
-        {/* Actions */}
-        <div className="hidden lg:flex items-center gap-6">
-          <button 
-            onClick={toggleLanguage}
-            className="text-white/80 hover:text-accent font-body text-xs tracking-wider uppercase border border-white/20 px-3 py-1 rounded transition-colors cursor-pointer"
-          >
-            {locale === 'uk' ? 'EN' : 'UA'}
-          </button>
+    <>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-primary/95 shadow-[0_4px_30px_rgba(0,0,0,0.15)] py-4 backdrop-blur-md border-b border-white/5' : 'bg-transparent py-6'
+      }`}>
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           
-          <a href="tel:+380677700275" className="text-white font-body text-sm tracking-wide font-medium hover:text-accent transition-colors">
-            +38 067 770 02 75
+          {/* Logo Brand wordmark + minimalist custom SVG logomark */}
+          <a href="#" className="flex items-center gap-3 group text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 transition-transform duration-500 group-hover:rotate-180" viewBox="0 0 32 32">
+              <path d="M10 24V10L16 16L22 10V24" stroke="currentColor" fill="none" strokeWidth="2.5" strokeLinecap="square" />
+              <path d="M10 24H22" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+            <div className="flex flex-col">
+              <span className="font-display text-xl font-bold tracking-widest text-white">KUZMENKO</span>
+              <span className="text-[0.55rem] tracking-[0.3em] text-accent font-semibold">ESTATE</span>
+            </div>
           </a>
 
-          <a href="#calculator" className="bg-accent hover:bg-accent/90 text-white font-body text-xs uppercase tracking-widest font-medium px-5 py-3 transition-colors duration-200">
-            {t('nav.cta')}
-          </a>
-        </div>
-
-        {/* Mobile menu trigger */}
-        <div className="flex lg:hidden items-center gap-4">
-          <button 
-            onClick={toggleLanguage}
-            className="text-white/85 hover:text-accent font-body text-xs border border-white/20 px-2.5 py-1 rounded"
-          >
-            {locale === 'uk' ? 'EN' : 'UA'}
-          </button>
-          
-          <button 
-            onClick={() => setIsMenuOpen(!isMenuOpen)} 
-            aria-label="Toggle menu"
-            className="text-white focus:outline-none cursor-pointer"
-          >
-            <span className="block w-6 h-0.5 bg-white mb-1.5 transition-transform duration-300"></span>
-            <span className="block w-6 h-0.5 bg-white mb-1.5 transition-transform duration-300"></span>
-            <span className="block w-6 h-0.5 bg-white transition-transform duration-300"></span>
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Fullscreen Navigation Overlay */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-primary/98 z-50 flex flex-col justify-between p-8 transition-opacity duration-300">
-          <div className="flex items-center justify-between">
-            <span className="font-display font-bold text-lg text-white uppercase tracking-widest">Kuzmenko Estate</span>
-            <button 
-              onClick={() => setIsMenuOpen(false)}
-              className="text-white text-3xl font-light hover:text-accent focus:outline-none cursor-pointer"
-            >
-              ✕
-            </button>
-          </div>
-          
-          <nav className="flex flex-col gap-6 my-auto text-left">
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => (
-              <a 
-                key={item.href} 
-                href={item.href} 
-                onClick={() => setIsMenuOpen(false)}
-                className="text-white font-display text-3xl hover:text-accent transition-colors py-2 border-b border-white/5"
+              <button
+                key={item.key}
+                onClick={() => handleNavClick(item.path)}
+                className="font-display text-xs tracking-widest text-white/80 hover:text-accent transition-colors duration-200 uppercase"
               >
-                {item.label}
-              </a>
+                {t(`nav.${item.key}`)}
+              </button>
             ))}
           </nav>
 
-          <div className="flex flex-col gap-4">
-            <a href="tel:+380677700275" className="text-white font-body text-lg font-medium hover:text-accent transition-colors">
+          {/* Actions & Locale switcher */}
+          <div className="hidden lg:flex items-center gap-6">
+            <div className="flex items-center border border-white/20 p-0.5">
+              <button
+                onClick={() => setLocale('uk')}
+                className={`text-[0.65rem] px-2 py-1 tracking-wider transition-all duration-300 ${locale === 'uk' ? 'bg-accent text-white font-semibold' : 'text-white/60 hover:text-white'}`}
+              >
+                UA
+              </button>
+              <button
+                onClick={() => setLocale('en')}
+                className={`text-[0.65rem] px-2 py-1 tracking-wider transition-all duration-300 ${locale === 'en' ? 'bg-accent text-white font-semibold' : 'text-white/60 hover:text-white'}`}
+              >
+                EN
+              </button>
+            </div>
+            
+            <a
+              href="tel:+380677700275"
+              className="text-xs tracking-widest text-white hover:text-accent font-medium font-display transition-colors duration-300"
+            >
               +38 067 770 02 75
             </a>
-            <p className="text-white/50 font-body text-sm">Дніпро, Україна · Est. 2009</p>
+
+            <button
+              onClick={() => handleNavClick('#contact')}
+              className="border border-accent/40 bg-accent/10 backdrop-blur-sm px-5 py-2.5 text-xs text-white hover:bg-accent tracking-widest font-display transition-all duration-300"
+            >
+              {t('nav.cta')}
+            </button>
           </div>
+
+          {/* Mobile hamburger menu toggle */}
+          <div className="flex items-center gap-4 lg:hidden">
+            <div className="flex items-center border border-white/20 p-0.5">
+              <button
+                onClick={() => setLocale('uk')}
+                className={`text-[0.6rem] px-1.5 py-0.5 tracking-wider ${locale === 'uk' ? 'bg-accent text-white font-semibold' : 'text-white/60'}`}
+              >
+                UA
+              </button>
+              <button
+                onClick={() => setLocale('en')}
+                className={`text-[0.6rem] px-1.5 py-0.5 tracking-wider ${locale === 'en' ? 'bg-accent text-white font-semibold' : 'text-white/60'}`}
+              >
+                EN
+              </button>
+            </div>
+
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-white p-2 focus:outline-none"
+              aria-label="Toggle Menu"
+            >
+              {menuOpen ? (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="1.5" d="M4 8h16M4 16h16" />
+                </svg>
+              )}
+            </button>
+          </div>
+
         </div>
-      )}
-    </header>
+      </header>
+
+      {/* Full-screen Overlay Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: '100%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 120 }}
+            className="fixed inset-0 z-40 bg-primary flex flex-col justify-between p-8 pt-32 lg:hidden overflow-y-auto"
+          >
+            <div className="flex flex-col gap-6">
+              {navItems.map((item, idx) => (
+                <motion.button
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: idx * 0.04 }}
+                  key={item.key}
+                  onClick={() => handleNavClick(item.path)}
+                  className="font-display text-2xl tracking-widest text-left text-white/90 hover:text-accent border-b border-white/5 pb-2 transition-all duration-300 uppercase"
+                >
+                  {t(`nav.${item.key}`)}
+                </motion.button>
+              ))}
+            </div>
+
+            <div className="flex flex-col gap-6 pt-12 border-t border-white/10">
+              <a
+                href="tel:+380677700275"
+                className="text-xl tracking-widest text-white/95 font-display"
+              >
+                +38 067 770 02 75
+              </a>
+              <p className="text-xs tracking-wider text-white/40">info@kzmestate.com</p>
+              
+              <button
+                onClick={() => handleNavClick('#contact')}
+                className="bg-accent text-white py-4 text-center text-xs tracking-widest font-display font-semibold transition-all hover:bg-accent/90"
+              >
+                {t('nav.cta')}
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

@@ -1,62 +1,80 @@
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import SocialProof from "@/components/SocialProof";
-import Philosophy from "@/components/Philosophy";
-import Services from "@/components/Services";
-import PricingCalculator from "@/components/PricingCalculator";
-import Process from "@/components/Process";
-import VideoShowcase from "@/components/VideoShowcase";
-import Advantages from "@/components/Advantages";
-import PortfolioGallery from "@/components/PortfolioGallery";
-import FAQ from "@/components/FAQ";
-import ContactForm from "@/components/ContactForm";
+import StatsStrip from "@/components/StatsStrip";
+import AboutSection from "@/components/AboutSection";
+import ServicesSection from "@/components/ServicesSection";
+import CalculatorSection from "@/components/CalculatorSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import TrustSection from "@/components/TrustSection";
+import LiveStreamSection from "@/components/LiveStreamSection";
+import GallerySection from "@/components/GallerySection";
+import ProcessSection from "@/components/ProcessSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import FAQSection from "@/components/FAQSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="relative overflow-hidden">
-        <Hero />
-        <SocialProof />
-        <Philosophy />
+      <main className="relative z-10">
         
-        {/* Interstitial 1: Standalone Statement Band */}
-        <div className="bg-primary py-12 border-y border-white/10 text-center relative overflow-hidden select-none">
-          <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent via-transparent to-transparent pointer-events-none" />
-          <p className="font-display italic text-2xl sm:text-3xl text-accent px-6 tracking-wide max-w-4xl mx-auto">
-            «Проєктування — це мистецтво передбачення витрат до першого залиття фундаменту»
-          </p>
-        </div>
-
-        <Services />
-        <PricingCalculator />
-
-        {/* Interstitial 2: Labeled Hairline */}
-        <div className="bg-bg-light py-4 relative">
-          <div className="max-w-7xl mx-auto px-6 flex items-center gap-4">
-            <span className="text-[10px] tracking-[0.3em] font-body text-text-muted uppercase shrink-0">ТЕХНОЛОГІЧНИЙ РЕГЛАМЕНТ K-ESTATE</span>
-            <div className="h-[1px] bg-primary/10 w-full" />
-            <span className="text-[10px] tracking-[0.3em] font-body text-accent uppercase shrink-0">0% ПЕРЕПЛАТ</span>
+        {/* Layered Hero Section */}
+        <Hero />
+        
+        {/* Interstitial Thin Strip 1: Labeled Hairline */}
+        <div className="bg-primary py-4 border-t border-b border-white/5 z-20 relative">
+          <div className="max-w-7xl mx-auto px-6 flex items-center justify-between text-[0.65rem] tracking-[0.3em] text-white/40 font-body">
+            <span>KUZMENKO ESTATE — ENGINEERING AND CONSTRUCTION</span>
+            <span className="hidden md:inline">FOUNDED IN 2009 • DESIGN & BUILD</span>
           </div>
         </div>
 
-        <Process />
-        <VideoShowcase />
+        <StatsStrip />
 
-        {/* Interstitial 3: Text Marquee/Ticker (Drifts slowly) */}
-        <div className="bg-accent/5 py-8 overflow-hidden whitespace-nowrap border-y border-accent/10 relative">
-          <div className="flex animate-marquee-slide gap-16 text-xs tracking-[0.35em] font-body text-primary uppercase select-none">
-            <span className="shrink-0">ФІКСОВАНИЙ КОШТОРИС ДЛЯ КОЖНОЇ ВІЛЛИ · 100% ГАРАНТІЯ ТЕРМІНІВ · ВЛАСНИЙ ТЕХНІЧНИЙ НАГЛЯД · ОБУХІВКА · ПІЩАНКА · ДНІПРО · 15 РОКІВ ПРАКТИКИ · ФІКСОВАНИЙ КОШТОРИС ДЛЯ КОЖНОЇ ВІЛЛИ · 100% ГАРАНТІЯ ТЕРМІНІВ · ВЛАСНИЙ ТЕХНІЧНИЙ НАГЛЯД</span>
-            <span className="shrink-0">ФІКСОВАНИЙ КОШТОРИС ДЛЯ КОЖНОЇ ВІЛЛИ · 100% ГАРАНТІЯ ТЕРМІНІВ · ВЛАСНИЙ ТЕХНІЧНИЙ НАГЛЯД · ОБУХІВКА · ПІЩАНКА · ДНІПРО · 15 РОКІВ ПРАКТИКИ · ФІКСОВАНИЙ КОШТОРИС ДЛЯ КОЖНОЇ ВІЛЛИ · 100% ГАРАНТІЯ ТЕРМІНІВ · ВЛАСНИЙ ТЕХНІЧНИЙ НАГЛЯД</span>
+        {/* Interstitial Thin Strip 2: Standalone Statement Band */}
+        <div className="bg-bg-light py-8 border-b border-primary/5">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <p className="font-display text-xl sm:text-2xl text-accent/80 font-medium tracking-wide">
+              ПОВНИЙ ЦИКЛ КАПІТАЛЬНОГО БУДІВНИЦТВА РЕЗИДЕНЦІЙ ТА FIT-OUT КОМЕРЦІЙНОЇ НЕРУХОМОСТІ
+            </p>
           </div>
         </div>
 
-        <Advantages />
-        <PortfolioGallery />
-        <FAQ />
-        <ContactForm />
+        <AboutSection />
+        
+        {/* Interstitial Thin Strip 3: Press/Rating Strip - Inverted to Light */}
+        <div className="bg-bg-light py-6 border-t border-b border-primary/10 z-20 relative">
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-[0.65rem] tracking-widest text-accent font-semibold font-display">
+            <div>РЕЙТИНГ 4.9 • GOOGLE REVIEWS</div>
+            <div>ЛІЦЕНЗІЯ СС3 • НАЙВИЩИЙ КЛАС</div>
+            <div>15 РОКІВ НАУКОВОГО НАГЛЯДУ</div>
+            <div>0% ВІДХИЛЕННЯ ВІД КОШТОРИСУ</div>
+          </div>
+        </div>
+
+        <ServicesSection />
+        <CalculatorSection />
+        <WhyUsSection />
+        
+        {/* Interstitial Thin Strip 4: Textured Statement */}
+        <div className="bg-bg-light py-10 border-b border-primary/5">
+          <div className="max-w-7xl mx-auto px-6 text-center space-y-2">
+            <span className="text-[0.6rem] tracking-[0.3em] text-accent uppercase font-bold block">КУЛЬТУРА ВИРОБНИЦТВА</span>
+            <p className="font-display text-2xl text-primary font-bold">
+              ВІДКРИТІСТЬ ПРОЦЕСІВ ЯК ОСНОВА ДОВІРИ НАШИХ ПАРТНЕРІВ
+            </p>
+          </div>
+        </div>
+
+        <TrustSection />
+        <LiveStreamSection />
+        <GallerySection />
+        <ProcessSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <ContactSection />
       </main>
       <Footer />
     </>

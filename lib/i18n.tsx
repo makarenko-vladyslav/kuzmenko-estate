@@ -16,19 +16,23 @@ const LocaleContext = createContext<LocaleContextProps>({
 });
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState(() => {
-    if (typeof window !== 'undefined') return localStorage.getItem('locale') || content.defaultLocale;
+  const [locale, setLocaleState] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('locale') || content.defaultLocale;
+    }
     return content.defaultLocale;
   });
 
   const setLocale = useCallback((l: string) => {
     setLocaleState(l);
-    if (typeof window !== 'undefined') localStorage.setItem('locale', l);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('locale', l);
+    }
   }, []);
 
   const t = useCallback((path: string): any => {
     const keys = path.split('.');
-    const locales = content.locales as Record<string, Record<string, any>>;
+    const locales = content.locales as Record<string, any>;
     let val: any = locales[locale];
     for (const k of keys) {
       if (val && typeof val === 'object' && k in val) {
@@ -39,7 +43,8 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
       }
     }
     if (val !== undefined) return val;
-    
+
+    // Fallback to defaultLocale
     val = locales[content.defaultLocale];
     for (const k of keys) {
       if (val && typeof val === 'object' && k in val) {
@@ -59,4 +64,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
   );
 }
 
-export function useLocale() { return useContext(LocaleContext); }
+export function useLocale() {
+  return useContext(LocaleContext);
+}
+  
